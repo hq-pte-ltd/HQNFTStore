@@ -16,18 +16,29 @@ import { MobileNavbar } from '../MobileNavbar';
 
 const getDefaultLinkActions = (connected: boolean) => {
   return [
-    <Link to={`/`} key={'explore'}>
-      <Button className="app-btn">Explore</Button>
-    </Link>,
+    <a href="https://www.homeqube.ai/" key={'homeqube'} target="_blank" rel="noreferrer">
+      <Button className="app-btn">
+        {' '}
+        PROOF OF <br /> CONCEPT
+      </Button>
+    </a>,
     <Link to={`/collections`} key={'collections'}>
-      <Button className="app-btn">Collections</Button>
+      <Button className="app-btn">
+        {' '}
+        NFT <br /> COLLECTIONS
+      </Button>
     </Link>,
-    <Link to={`/artworks`} key={'artwork'}>
-      <Button className="app-btn">{connected ? 'My Items' : 'Artwork'}</Button>
-    </Link>,
-    <Link to={`/artists`} key={'artists'}>
-      <Button className="app-btn">Creators</Button>
-    </Link>,
+    <a href="https://www.qube.homeqube.com/" key={'qube'} target="_blank" rel="noreferrer">
+      <Button className="app-btn">
+        {' '}
+        ICO <br /> WEBISTE
+      </Button>
+    </a>,
+    <a href="https://t.me/homeqube" key={'telegram'} target="_blank" rel="noreferrer">
+      <button className="exchange-button-more2 btn rounded-pill" type="button">
+        JOIN TELEGRAM
+      </button>
+    </a>,
   ];
 };
 
@@ -54,7 +65,7 @@ export const MetaplexMenu = () => {
     return (
       <>
         <Modal
-          title={<img src={'/metaplex-logo.svg'} />}
+          title={<img src={'/Homeqube-logo-black_small 1.svg'} />}
           visible={isModalVisible}
           footer={null}
           className={'modal-box'}
@@ -78,10 +89,12 @@ export const MetaplexMenu = () => {
                     onClick={() => setIsModalVisible(false)}
                     className="secondary-btn"
                   />
-                  <HowToBuyModal
+                  {/* 
+                   <HowToBuyModal
                     onClick={() => setIsModalVisible(false)}
                     buttonClassName="black-btn"
                   />
+                  */}
                 </div>
               ) : (
                 <>
@@ -93,7 +106,10 @@ export const MetaplexMenu = () => {
                       setIsModalVisible(false);
                     }}
                   />
-                  <Notifications />
+                  {/* 
+                   <Notifications />
+                   */}
+
                   <Cog />
                 </>
               )}
@@ -113,7 +129,7 @@ export const MetaplexMenu = () => {
 export const LogoLink = () => {
   return (
     <Link to={`/`}>
-      <img src={'/metaplex-logo.svg'} />
+      <img src={'/Homeqube-logo-black_small 1.svg'} />
     </Link>
   );
 };
@@ -126,7 +142,7 @@ export const AppBar = () => {
       <div id="desktop-navbar">
         <div className="app-left">
           <LogoLink />
-          &nbsp;&nbsp;&nbsp;
+          &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
           <MetaplexMenu />
         </div>
         <div className="app-right">

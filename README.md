@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://metaplex.com">
-    <img alt="Metaplex" src="js/packages/web/public/metaplex-logo.svg" style="background: black; padding: 10px" width="250" />
+    <img alt="Metaplex" src="js/packages/web/public/Homeqube-logo-black_small 1.svg" style="background: black; padding: 10px" width="250" />
   </a>
 </p>
 

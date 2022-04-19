@@ -19,6 +19,7 @@ import { PackCreateView } from './views/packCreate';
 import { BillingView } from './views/auction/billing';
 import { CollectionsView } from './views/collections';
 import { CollectionDetailView } from './views/collections/collectionDetail';
+import Footer from './Footer';
 
 export function Routes() {
   const shouldEnableNftPacks = process.env.NEXT_ENABLE_NFT_PACKS === 'true';
@@ -85,6 +86,7 @@ export function Routes() {
             <Route path="/" component={() => <HomeView />} />
           </Switch>
         </Providers>
+        <Footer />
       </HashRouter>
     </>
   );
