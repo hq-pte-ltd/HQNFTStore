@@ -196,40 +196,48 @@ code {
   padding-top: 5px;
 }
 
-.full-history:hover {
-  color: #fff;
-  transition: 150ms;
-  padding-top: 5px;
-}
+// .full-history:hover {
+//   color: #fff;
+//   transition: 150ms;
+//   padding-top: 5px;
+// }
 
 h1 {
   font-style: normal;
   font-weight: 600;
   font-size: 2rem;
 }
-.ant-btn:hover {
-  background-color: transparent !important;
+.ant-steps-vertical.ant-steps-dot .ant-steps-item-process .ant-steps-item-container .ant-steps-item-icon .ant-steps-icon-dot
+{
+  top: -1px;
+  left: 0px !important;
 }
+.ant-steps-item-finish 
+  > .ant-steps-item-container
+  > .ant-steps-item-content 
+  > .ant-steps-item-title{
+    color: hsla(0, 0%, 0%, 0.45) !important;
+  }
 .ant-steps-item-process
   > .ant-steps-item-container
   > .ant-steps-item-content
   > .ant-steps-item-title {
-  color: hsla(0, 0%, 100%, 0.85);
+  color: hsla(0, 0%, 0%, 0.85);
 }
 .ant-steps-item-wait
   > .ant-steps-item-container
   > .ant-steps-item-content
   > .ant-steps-item-title {
-  color: hsla(0, 0%, 100%, 0.45);
+  color: hsla(0, 0%, 0%, 0.45);
 }
 .ant-steps-item-wait
   .ant-steps-item-icon
   > .ant-steps-icon
   .ant-steps-icon-dot {
-  background: hsla(0, 0%, 100%, 0.3);
+  background: hsla(0, 0%, 0%, 0.3);
 }
 .ant-card {
-  background: #141414;
+  background: #000000;
 }
 .ant-card-bordered {
   border: 1px solid #303030;
@@ -246,8 +254,8 @@ h1 {
   font-weight: 600;
   font-size: 16px;
   line-height: 16px;
-  background-color: transparent !important;
-  color: white;
+  background: linear-gradient(180deg, #474747 0%, #494a4b 100%);
+  color: #ffffff;
   &.secondary-btn {
     color: @black-100;
     background: @metaplex-primary-color !important;
@@ -278,12 +286,12 @@ h1 {
     border-radius: 8px;
     width: fit-content;
 
-    &:hover,
-    &:focus {
-      background: transparent;
-      border-color: rgba(255, 255, 255, 0.05);
-      color: #ffffff;
-    }
+    // &:hover,
+    // &:focus {
+    //   background: transparent;
+    //   border-color: rgba(255, 255, 255, 0.05);
+    //   color: #ffffff;
+    // }
   }
 }
 
