@@ -1,7 +1,7 @@
 function Footer()
 {
     return(
-        <footer className="p-3 bg-dark text-white text-center position-relative pt-5 pb-5 text-uppercase">
+        <footer className="0text-white text-center text-uppercase">
             <div className="container px-4">
                 <div className="row gx-3">
                     <div className="col-md-6 container-fluid">

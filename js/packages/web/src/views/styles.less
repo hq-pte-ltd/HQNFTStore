@@ -31,7 +31,9 @@
     color: @black-100 !important;
   }
 }
-
+.ant-upload-list-item-name{
+  color: #000 !important;
+}
 .url-form-action {
   color: #FFFFFF !important;
   &.ant-form-item-has-error :not(.ant-input-disabled):not(.ant-input-borderless).ant-input {
@@ -42,7 +44,7 @@
     font-weight: 700;
     display: flex;
     align-items: center;
-    color: #ffffff;
+    color: #000000;
   }
 }
 .padding0 {
@@ -97,10 +99,12 @@
     font-weight: 700;
     display: flex;
     align-items: center;
-    color: #ffffff;
+    color: #000;
   }
 }
-
+.ant-row{
+  color: #000;
+}
 .ant-row.content-action > span {
   width: 100%;
 }
@@ -258,7 +262,7 @@ h2 {
   display: flex;
   flex-direction: column;
   text-align: left;
-
+  color :#000;
   .field-title {
     text-align: left;
     font-style: normal;
@@ -268,6 +272,22 @@ h2 {
     display: flex;
     align-items: center;
     color: rgba(3, 3, 3, 0.7);
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    margin-bottom: 12px;
+  }
+  .field-title-white {
+    text-align: left;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.7);
 
     flex: none;
     order: 0;

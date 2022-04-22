@@ -112,7 +112,7 @@ export const ArtView = () => {
             </Row>
             <Row>
               <Col span={6}>
-                <h6>Royalties</h6>
+                <h6 className="royalties">Royalties</h6>
                 <div className="royalties">
                   {((art.seller_fee_basis_points || 0) / 100).toFixed(2)}%
                 </div>

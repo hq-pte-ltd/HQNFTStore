@@ -1042,7 +1042,7 @@ const RoyaltiesStep = (props: {
           </span>
           <span
             style={{
-              color: 'rgba(255, 255, 255, 0.7)',
+              color: '#000',
               verticalAlign: 'middle',
               lineHeight: 1,
             }}
@@ -1055,7 +1055,7 @@ const RoyaltiesStep = (props: {
           onCancel={() => setShowCreatorsModal(false)}
         >
           <label className="action-field" style={{ width: '100%' }}>
-            <span className="field-title">Creators</span>
+            <span className="field-title-white">Creators</span>
             <UserSearch setCreators={setCreators} />
           </label>
         </MetaplexModal>
