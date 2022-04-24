@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import { Routes } from './routes';
 // import { Routes } from './views/preLaunch/routes'
 
