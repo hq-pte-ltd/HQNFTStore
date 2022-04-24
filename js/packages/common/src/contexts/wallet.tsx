@@ -57,7 +57,6 @@ export const WalletModal: FC = () => {
           color: 'rgba(255, 255, 255, 0.75)',
           fontSize: '14px',
           lineHeight: '14px',
-          fontFamily: 'GraphikWeb',
           letterSpacing: '0.02em',
           marginBottom: 14,
         }}
