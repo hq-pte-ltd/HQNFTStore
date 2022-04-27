@@ -4,7 +4,7 @@ export type StringPublicKey = string;
 
 export class LazyAccountInfoProxy<T> {
   executable: boolean = false;
-  owner: StringPublicKey = 'Ehp2WrtAAY8zYLn94kEji6gJtoBb2ReG6Pzw7zyZBWuP';
+  owner: StringPublicKey = '';
   lamports: number = 0;
 
   get data() {
