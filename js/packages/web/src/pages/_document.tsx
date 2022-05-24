@@ -26,7 +26,7 @@ export default class MetaplexDocument extends Document {
           <link rel="icon" type="image/png" sizes="96x96" href="/Favicon.png" />
           <link rel="icon" type="image/png" sizes="16x16" href="/Favicon.png" />
           <meta name="theme-color" content="#ffffff" />
-          <meta name="description" content="Metaplex NFT Marketplace" />
+          <meta name="description" content="WE ARE A SOLANA BASED NFT “LAUNCHPAD-MARKETPLACE” FOR HOME MANUFACTURING, FROM 3D PRINTED PARTS, HOME DESIGNS, HOME SYSTEM ALGORITHMS, DECORS, FIXTURES, FURNITURES, PROTOTYPES, AND RELATED OTHERS TO HOMEBUILDING BOTH FOR THE METAVERSE AND IRL." />
           <link rel="manifest" href="/manifest.json" />
           <link
             rel="stylesheet"
