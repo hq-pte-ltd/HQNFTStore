@@ -13,32 +13,98 @@ import {
 } from '../CurrentUserBadge';
 import { ConnectButton } from '@oyster/common';
 import { MobileNavbar } from '../MobileNavbar';
+import { NavLink } from 'react-router-dom';
 
 const getDefaultLinkActions = (connected: boolean) => {
   return [
-    <a href="https://www.homeqube.ai/" key={'homeqube'} target="_blank" rel="noreferrer">
-      <Button className="app-btn">
-        {' '}
-        PROOF OF <br /> CONCEPT
-      </Button>
-    </a>,
-    <Link to={`/collections`} key={'collections'}>
-      <Button className="app-btn">
-        {' '}
-        NFT <br /> COLLECTIONS
-      </Button>
-    </Link>,
-    <a href="https://www.qube.homeqube.com/" key={'qube'} target="_blank" rel="noreferrer">
-      <Button className="app-btn">
-        {' '}
-        ICO <br /> WEBISTE
-      </Button>
-    </a>,
-    <a href="https://t.me/homeqube" key={'telegram'} target="_blank" rel="noreferrer">
-      <button className="exchange-button-more2 btn rounded-pill" type="button">
-        JOIN TELEGRAM
-      </button>
-    </a>,
+    <nav className="Menu text-center" key={'navbar'}>
+      {/* <li className="mx-5 mt-4">
+        <NavLink activeClassName="active" to="https://www.homeqube.ai/">
+          BETA
+        </NavLink>
+      </li> */}
+      <li className="mx-5 mt-4 lh-sm">
+        <a
+          href="https://www.homeqube.ai/"
+          key={'homeqube'}
+          target="_blank"
+          rel="noreferrer"
+        >
+          BETA
+        </a>
+      </li>
+
+      <li className="mx-5 mt-4 lh-sm">
+        <NavLink
+          activeClassName="active"
+          to="/collections"
+          key={'nftcollecions'}
+        >
+          NFT <br /> COLLECTIONS
+        </NavLink>
+      </li>
+
+      {/* <Link to={`/collections`} key={'collections'}>
+        <Button className="app-btn">
+          {' '}
+          NFT <br /> COLLECTIONS
+        </Button>
+      </Link> */}
+
+      <li className="mx-5 mt-4 lh-sm">
+        <a
+          href="https://www.qube.homeqube.com/"
+          key={'homeqube'}
+          target="_blank"
+          rel="noreferrer"
+        >
+          ICO <br /> WEBISTE
+        </a>
+      </li>
+
+      {/* <a
+        href="https://www.qube.homeqube.com/"
+        key={'qube'}
+        target="_blank"
+        rel="noreferrer"
+      >
+        <Button className="app-btn">
+          {' '}
+          ICO <br /> WEBISTE
+        </Button>
+      </a> */}
+      <li className="mx-4 mt-3 lh-sm">
+        <a
+          href="https://t.me/homeqube"
+          key={'telegram'}
+          target="_blank"
+          rel="noreferrer"
+        >
+          <button
+            className="exchange-button-more2 btn rounded-pill"
+            type="button"
+          >
+            JOIN TELEGRAM
+          </button>
+        </a>
+      </li>
+
+      <li className="mx-4 mt-3 lh-sm">
+        <a
+          href="https://discord.gg/JhQXmjm59e"
+          key={'discord'}
+          target="_blank"
+          rel="noreferrer"
+        >
+          <button
+            className="exchange-button-more2 btn rounded-pill"
+            type="button"
+          >
+            JOIN DISCORD
+          </button>
+        </a>
+      </li>
+    </nav>,
   ];
 };
 
@@ -146,9 +212,9 @@ export const AppBar = () => {
           <MetaplexMenu />
         </div>
         <div className="app-right">
-          {!connected && (
+          {/* {!connected && (
             <HowToBuyModal buttonClassName="modal-button-default" />
-          )}
+          )} */}
           {!connected && (
             <ConnectButton style={{ height: 48 }} allowWalletChange />
           )}

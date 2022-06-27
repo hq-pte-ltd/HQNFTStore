@@ -249,16 +249,6 @@ const CategoryStep = (props: {
     <>
       <Row className="call-to-action">
         <h2>Create a new item</h2>
-        <p>
-          First time creating on Metaplex?{' '}
-          <a
-            href="https://docs.metaplex.com/storefront/create"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Read our creators’ guide.
-          </a>
-        </p>
       </Row>
       <Row justify={width < 768 ? 'center' : 'start'}>
         <Col>
@@ -1183,7 +1173,7 @@ const LaunchStep = (props: {
           )}
         </Col>
         <Col className="section" style={{ minWidth: 300 }}>
-          <Statistic
+          {/* <Statistic
             className="create-statistic"
             title="Royalty Percentage"
             value={props.attributes.seller_fee_basis_points / 100}
@@ -1200,7 +1190,7 @@ const LaunchStep = (props: {
             />
           ) : (
             <Spin />
-          )}
+          )} */}
         </Col>
       </Row>
       <Row>

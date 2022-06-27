@@ -8,9 +8,8 @@
     font-size: 14px;
     line-height: 18px;
     text-align: center;
-    letter-spacing: .05em;
+    letter-spacing: 0.05em;
     color: #000000;
-    
   }
 }
 
@@ -49,7 +48,7 @@
   background: linear-gradient(44.73deg, #7c7c7c 11.32%, #4e4e4e 92.96%);
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 40px;
-  width: 250px;
+  width: 185px;
   height: 50px;
   font-style: normal;
   font-weight: bold !important;
@@ -63,7 +62,6 @@
 .exchange-button-more2:hover {
   color: #ffffff;
 }
-
 
 .app-bar-inner {
   display: flex;
@@ -83,4 +81,54 @@
       color: white;
     }
   }
+}
+
+.Menu {
+  list-style: none;
+  display: inline-flex;
+  flex: 1 0 auto;
+  margin-bottom: 0;
+  justify-content: space-around;
+}
+.Menu li {
+  margin: 0 12px;
+}
+.Menu a {
+  color: #000;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  outline: none;
+  text-decoration: none;
+  text-size-adjust: 100%;
+  touch-action: manipulation;
+  transition: color 0.3s;
+  padding-bottom: 15px;
+  line-height: 1px !important;
+}
+.Menu img {
+  max-height: 26px;
+}
+.Menu a:hover,
+a:active {
+  color: rgb(131, 146, 161);
+  border-bottom: 4px solid var(--title-text-color);
+}
+.active {
+  font-weight: bolder;
+}
+.button-wallet {
+  padding: 6px 16px;
+  background-color: rgb(78, 68, 206) !important;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 40px;
+  width: 185px;
+  height: 50px;
+  font-style: normal;
+  font-weight: bold !important;
+  font-size: 14px !important;
+  line-height: 30px !important;
+  letter-spacing: 0.15px;
+  color: #fff !important;
+  text-transform: uppercase;
 }
