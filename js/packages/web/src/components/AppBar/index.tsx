@@ -23,7 +23,7 @@ const getDefaultLinkActions = (connected: boolean) => {
           BETA
         </NavLink>
       </li> */}
-      <li className="mx-5 mt-4 lh-sm">
+      <li className="mx-5 pe-3 mt-4 lh-sm">
         <a
           href="https://www.homeqube.ai/"
           key={'homeqube'}
@@ -34,7 +34,7 @@ const getDefaultLinkActions = (connected: boolean) => {
         </a>
       </li>
 
-      <li className="mx-5 mt-4 lh-sm">
+      <li className="mx-5 pe-3 mt-4 lh-sm">
         <NavLink
           activeClassName="active"
           to="/collections"
@@ -51,7 +51,7 @@ const getDefaultLinkActions = (connected: boolean) => {
         </Button>
       </Link> */}
 
-      <li className="mx-5 mt-4 lh-sm">
+      <li className="mx-5 pe-3 mt-4 lh-sm">
         <a
           href="https://www.qube.homeqube.com/"
           key={'homeqube'}
@@ -73,37 +73,6 @@ const getDefaultLinkActions = (connected: boolean) => {
           ICO <br /> WEBISTE
         </Button>
       </a> */}
-      <li className="mx-4 mt-3 lh-sm">
-        <a
-          href="https://t.me/homeqube"
-          key={'telegram'}
-          target="_blank"
-          rel="noreferrer"
-        >
-          <button
-            className="exchange-button-more2 btn rounded-pill"
-            type="button"
-          >
-            JOIN TELEGRAM
-          </button>
-        </a>
-      </li>
-
-      <li className="mx-4 mt-3 lh-sm">
-        <a
-          href="https://discord.gg/JhQXmjm59e"
-          key={'discord'}
-          target="_blank"
-          rel="noreferrer"
-        >
-          <button
-            className="exchange-button-more2 btn rounded-pill"
-            type="button"
-          >
-            JOIN DISCORD
-          </button>
-        </a>
-      </li>
     </nav>,
   ];
 };
