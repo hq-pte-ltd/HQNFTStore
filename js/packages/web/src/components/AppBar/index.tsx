@@ -30,10 +30,10 @@ const getDefaultLinkActions = (connected: boolean) => {
           target="_blank"
           rel="noreferrer"
         >
-          BETA
+          HOMEQUBE.AI
         </a>
       </li>
-
+      {/* 
       <li className="mx-5 pe-3 mt-4 lh-sm">
         <NavLink
           activeClassName="active"
@@ -42,7 +42,7 @@ const getDefaultLinkActions = (connected: boolean) => {
         >
           NFT <br /> COLLECTIONS
         </NavLink>
-      </li>
+      </li> */}
 
       {/* <Link to={`/collections`} key={'collections'}>
         <Button className="app-btn">
@@ -62,6 +62,37 @@ const getDefaultLinkActions = (connected: boolean) => {
         </a>
       </li>
 
+      <li className="mx-4 mt-3 lh-sm">
+        <a
+          href="https://t.me/homeqube"
+          key={'telegram'}
+          target="_blank"
+          rel="noreferrer"
+        >
+          <button
+            className="exchange-button-more2 btn rounded-pill"
+            type="button"
+          >
+            TELEGRAM
+          </button>
+        </a>
+      </li>
+
+      <li className="mx-4 mt-3 lh-sm">
+        <a
+          href="https://discord.gg/JhQXmjm59e"
+          key={'discord'}
+          target="_blank"
+          rel="noreferrer"
+        >
+          <button
+            className="exchange-button-more2 btn rounded-pill"
+            type="button"
+          >
+            DISCORD
+          </button>
+        </a>
+      </li>
       {/* <a
         href="https://www.qube.homeqube.com/"
         key={'qube'}
@@ -163,7 +194,7 @@ export const MetaplexMenu = () => {
 
 export const LogoLink = () => {
   return (
-    <Link to={`/`}>
+    <Link to={`/art/create/0`}>
       <img src={'/Homeqube-logo-black_small 1.svg'} />
     </Link>
   );

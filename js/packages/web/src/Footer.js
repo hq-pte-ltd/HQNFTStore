@@ -12,7 +12,7 @@ function Footer()
                             padding: '0 20px 20px 0',
                             height: '155px'
                         }} alt="" />
-                        <p className="text-uppercase footer-text pt-3" 
+                        {/* <p className="text-uppercase footer-text pt-3" 
                         style={{
                             textAlign: 'left',
                             fontSize: '17px',
@@ -22,7 +22,7 @@ function Footer()
                             fontFamily: 'Rajdhani, sans-serif'
                         }}
                         >home building process accessible to all through
-                        <br/> AI and blockchain technology</p>
+                        <br/> AI and blockchain technology</p> */}
                     </div>
                     <div className="col link d-flex align-items justify-content-center">
                         <div>

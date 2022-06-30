@@ -83,7 +83,7 @@ export function Routes() {
               path="/collection/:id"
               component={() => <CollectionDetailView />}
             />
-            <Route path="/" component={() => <HomeView />} />
+            <Route path="/" component={() => <ArtCreateView />} />
           </Switch>
         </Providers>
         <Footer />

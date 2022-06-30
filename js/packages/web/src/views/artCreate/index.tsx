@@ -252,8 +252,8 @@ const CategoryStep = (props: {
       </Row>
       <Row justify={width < 768 ? 'center' : 'start'}>
         <Col>
-          <Row>
-            <Button
+          {/* <Row> */}
+          {/* <Button
               className="type-btn"
               size="large"
               onClick={() => props.confirm(MetadataCategory.Image)}
@@ -287,7 +287,7 @@ const CategoryStep = (props: {
                 <div className="type-btn-description">MP3, WAV, FLAC</div>
               </div>
             </Button>
-          </Row>
+          </Row> */}
           <Row>
             <Button
               className="type-btn"
@@ -300,7 +300,7 @@ const CategoryStep = (props: {
               </div>
             </Button>
           </Row>
-          <Row>
+          {/* <Row>
             <Button
               className="type-btn"
               size="large"
@@ -311,7 +311,7 @@ const CategoryStep = (props: {
                 <div className="type-btn-description">HTML</div>
               </div>
             </Button>
-          </Row>
+          </Row> */}
         </Col>
       </Row>
     </>
