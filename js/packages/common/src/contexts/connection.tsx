@@ -45,7 +45,7 @@ export const ENDPOINTS: Array<Endpoint> = [
   {
     name: 'mainnet-beta',
     label: 'mainnet-beta',
-    url: 'https://ssc-dao.genesysgo.net',
+    url: 'https://solana-mainnet.g.alchemy.com/v2/A8ehUkPDu9a3qpy-ZJl9eW3-j6GHRrG2',
     chainId: ChainId.MainnetBeta,
   },
   {

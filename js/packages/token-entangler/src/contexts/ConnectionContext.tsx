@@ -103,7 +103,7 @@ export type ENV = 'mainnet-beta' | 'testnet' | 'devnet' | 'localnet';
 export const ENDPOINTS = [
   {
     name: 'mainnet-beta' as ENV,
-    endpoint: 'https://ssc-dao.genesysgo.net',
+    endpoint: 'https://solana-mainnet.g.alchemy.com/v2/A8ehUkPDu9a3qpy-ZJl9eW3-j6GHRrG2',
     ChainId: ChainId.MainnetBeta,
   },
   {
