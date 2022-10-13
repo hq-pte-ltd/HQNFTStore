@@ -69,12 +69,13 @@ const getDefaultLinkActions = (connected: boolean) => {
           target="_blank"
           rel="noreferrer"
         >
-          <button
+          <img src="/icons8-telegram.svg" alt="" />
+          {/* <button
             className="exchange-button-more2 btn rounded-pill"
             type="button"
           >
             TELEGRAM
-          </button>
+          </button> */}
         </a>
       </li>
 
@@ -85,12 +86,13 @@ const getDefaultLinkActions = (connected: boolean) => {
           target="_blank"
           rel="noreferrer"
         >
-          <button
+          <img src="/icons8-discord.svg" alt="" />
+          {/* <button
             className="exchange-button-more2 btn rounded-pill"
             type="button"
           >
             DISCORD
-          </button>
+          </button> */}
         </a>
       </li>
       {/* <a

@@ -393,10 +393,13 @@ const UploadStep = (props: {
         <h2>Now, let&apos;s upload your creation</h2>
         <p style={{ fontSize: '1.2rem' }}>
           Your file will be uploaded to the decentralized web via Arweave.
-          Depending on file type, can take up to 1 minute. Arweave is a new type
-          of storage that backs data with sustainable and perpetual endowments,
-          allowing users and developers to truly store data forever – for the
-          very first time.
+          Depending on file type, can take up to 1 minute. Arweave is a globally
+          distributed hard drive that maintains its integrity over time, here
+          are Arweave&apos;s upload limitations:{' '}
+          <b>
+            Images are allowed up to 10MB. Others file have a maximum file size
+            of 16MB (mp4,mp3,ogg).
+          </b>
         </p>
       </Row>
       <Row className="content-action">
