@@ -27,7 +27,7 @@ export const ConnectButton = (props: ConnectButtonProps) => {
   if (!wallet || !allowWalletChange) {
     return (
       <Button
-        className={className || 'button-wallet mt-3'}
+        className={className || 'button-wallet'}
         {...rest}
         onClick={e => {
           props.onClick ? props.onClick(e) : null;

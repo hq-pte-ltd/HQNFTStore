@@ -17,95 +17,30 @@ import { NavLink } from 'react-router-dom';
 
 const getDefaultLinkActions = (connected: boolean) => {
   return [
-    <nav className="Menu text-center" key={'navbar'}>
-      {/* <li className="mx-5 mt-4">
-        <NavLink activeClassName="active" to="https://www.homeqube.ai/">
-          BETA
-        </NavLink>
-      </li> */}
-      <li className="mx-5 pe-3 mt-4 lh-sm">
-        <a
-          href="https://www.homeqube.ai/"
-          key={'homeqube'}
-          target="_blank"
-          rel="noreferrer"
-        >
-          HOMEQUBE.AI
-        </a>
-      </li>
-      {/* 
-      <li className="mx-5 pe-3 mt-4 lh-sm">
-        <NavLink
-          activeClassName="active"
-          to="/collections"
-          key={'nftcollecions'}
-        >
-          NFT <br /> COLLECTIONS
-        </NavLink>
-      </li> */}
-
-      {/* <Link to={`/collections`} key={'collections'}>
-        <Button className="app-btn">
-          {' '}
-          NFT <br /> COLLECTIONS
-        </Button>
-      </Link> */}
-
-      <li className="mx-5 pe-3 mt-4 lh-sm">
-        <a
-          href="https://www.qube.homeqube.com/"
-          key={'homeqube'}
-          target="_blank"
-          rel="noreferrer"
-        >
-          ICO <br /> WEBISTE
-        </a>
-      </li>
-
-      <li className="mx-4 mt-3 lh-sm">
-        <a
-          href="https://t.me/homeqube"
-          key={'telegram'}
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img src="/icons8-telegram.svg" alt="" />
-          {/* <button
-            className="exchange-button-more2 btn rounded-pill"
-            type="button"
+    <nav className="new-navbar-menu text-center" key={'navbar'}>
+      <ul className='navbar-ul'>
+        <li className="mx-5 lh-sm navbar-li">
+          <a
+            href="https://www.homeqube.ai/"
+            key={'homeqube'}
+            target="_blank"
+            rel="noreferrer"
           >
-            TELEGRAM
-          </button> */}
-        </a>
-      </li>
+            HOMEQUBE.AI
+          </a>
+        </li>
 
-      <li className="mx-4 mt-3 lh-sm">
-        <a
-          href="https://discord.gg/JhQXmjm59e"
-          key={'discord'}
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img src="/icons8-discord.svg" alt="" />
-          {/* <button
-            className="exchange-button-more2 btn rounded-pill"
-            type="button"
+        <li className="mx-5 lh-sm navbar-li">
+          <a
+            href="https://www.qube.homeqube.com/"
+            key={'homeqube'}
+            target="_blank"
+            rel="noreferrer"
           >
-            DISCORD
-          </button> */}
-        </a>
-      </li>
-      {/* <a
-        href="https://www.qube.homeqube.com/"
-        key={'qube'}
-        target="_blank"
-        rel="noreferrer"
-      >
-        <Button className="app-btn">
-          {' '}
-          ICO <br /> WEBISTE
-        </Button>
-      </a> */}
+            ICO WEBISTE
+          </a>
+        </li>
+      </ul>
     </nav>,
   ];
 };
@@ -197,7 +132,7 @@ export const MetaplexMenu = () => {
 export const LogoLink = () => {
   return (
     <Link to={`/art/create/0`}>
-      <img src={'/Homeqube-logo-black_small 1.svg'} />
+      <img src={'/Rework-Logo.svg'} />
     </Link>
   );
 };
@@ -207,18 +142,41 @@ export const AppBar = () => {
   return (
     <>
       <MobileNavbar />
-      <div id="desktop-navbar">
+      <div id="desktop-navbar" className="desktop-navbar">
         <div className="app-left">
           <LogoLink />
           &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-          <MetaplexMenu />
         </div>
+        <MetaplexMenu />
         <div className="app-right">
-          {/* {!connected && (
-            <HowToBuyModal buttonClassName="modal-button-default" />
-          )} */}
+          <div className="navbar-right">
+            <li className="list-none mx-2">
+              <a
+                href="https://t.me/homeqube"
+                key={'telegram'}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src="/telegram2.svg" alt="" />
+              </a>
+            </li>
+            <li className="list-none mx-2 me-5">
+              <a
+                href="https://discord.gg/JhQXmjm59e"
+                key={'discord'}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src="/discord2.svg" alt="" />
+              </a>
+            </li>
+          </div>
           {!connected && (
-            <ConnectButton style={{ height: 48 }} allowWalletChange />
+            <ConnectButton
+              style={{ height: 48 }}
+              className="connect-button"
+              allowWalletChange
+            />
           )}
           {connected && (
             <>

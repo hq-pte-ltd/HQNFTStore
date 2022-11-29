@@ -20,6 +20,7 @@ import { BillingView } from './views/auction/billing';
 import { CollectionsView } from './views/collections';
 import { CollectionDetailView } from './views/collections/collectionDetail';
 import Footer from './Footer';
+import Footer2 from './Footer2';
 
 export function Routes() {
   const shouldEnableNftPacks = process.env.NEXT_ENABLE_NFT_PACKS === 'true';
@@ -86,7 +87,8 @@ export function Routes() {
             <Route path="/" component={() => <ArtCreateView />} />
           </Switch>
         </Providers>
-        <Footer />
+        {/* <Footer /> */}
+        <Footer2 />
       </HashRouter>
     </>
   );
