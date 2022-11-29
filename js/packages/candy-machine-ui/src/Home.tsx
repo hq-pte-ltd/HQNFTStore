@@ -39,7 +39,7 @@ const ConnectButton = styled(WalletDialogButton)`
   margin-bottom: 5px;
   background: linear-gradient(180deg, #604ae5 0%, #813eee 100%);
   color: white;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
 `;
 
